@@ -15,6 +15,7 @@ function App() {
               <a href="/" className="link">some link</a>.
             </p>
           </section>
+          <iframe id="some-iframe" title="some iframe" src="https://dummyimage.com/600x400/000/fff" width="700" height="500"/>
         </main>
       </div>
       <footer className="footer">

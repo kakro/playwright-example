@@ -9,7 +9,7 @@ test('homepage has title and link', async ({ page }) => {
   // create a locator
   const getStarted = page.locator('text=some link');
   // const getStarted = page.locator('.link');
- // const getStarted = page.locator('a:has-text("some link")');
+  // const getStarted = page.locator('a:has-text("some link")');
 
 
   // Expect an attribute "to be strictly equal" to the value.
@@ -18,6 +18,11 @@ test('homepage has title and link', async ({ page }) => {
   // Click the get started link.
   await getStarted.click();
 
+});
+
+test('iframe',async ({ page })  => {
+  const iframeImage = page.frameLocator('#some-iframe').locator('img');
+  expect(iframeImage !== undefined).toBeTruthy();
 });
 
 test('should have header', async ({ page }) => {
