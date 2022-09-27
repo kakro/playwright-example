@@ -8,6 +8,9 @@ test('homepage has title and link', async ({ page }) => {
 
   // create a locator
   const getStarted = page.locator('text=some link');
+  // const getStarted = page.locator('.link');
+ // const getStarted = page.locator('a:has-text("some link")');
+
 
   // Expect an attribute "to be strictly equal" to the value.
   await expect(getStarted).toHaveAttribute('href', '/');
