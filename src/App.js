@@ -19,7 +19,7 @@ function App() {
         </main>
       </div>
       <footer className="footer">
-        <h3>Footer</h3>
+        <h3>I am a footer</h3>
           <a href="mailto:test@blub.de">Mail me..</a>
           <div className="footer-bottom">
             <p className="footer-bottom-description">Some footer disclaimer text</p>
